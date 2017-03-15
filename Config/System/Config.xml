@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<List>
+  <System>
+    <!--======== 版本是非常重要的标识 ========-->
+    <Version>v1.0.1</Version>
+  </System>
+  <!--Key配置 -->
+  <Key>
+	  <!--服务器名称 -->
+	  <MachineName>LIYU Machine</MachineName>
+
+    <!--10:【中午12点】|15:【下午3点】|22:【晚上10点】-->
+    <add key="Times" value="10|15|22"/>
+
+	  <!--邮件发送管理员 -->
+	  <MailToAdmin>yu.li@macrowing.com</MailToAdmin>
+  </Key>
+</List>

@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<List>
+  <BusinessDb>
+    <Server>YULEE-WORK\SQL2K12</Server>
+    <Database>BC_PFEP</Database>
+    <Uid>sa</Uid>
+    <Pwd>sa2k12</Pwd>
+    <Others></Others>
+  </BusinessDb>
+</List>

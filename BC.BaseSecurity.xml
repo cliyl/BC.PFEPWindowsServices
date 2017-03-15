@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BC.BaseSecurity</name>
+    </assembly>
+    <members>
+        <member name="T:BC.BaseSecurity.DESEncrypt">
+            <summary>
+            加密、解密帮助类
+            version: 2.0
+            <author>
+            	<name>liyu</name>
+            	<date>2015.08.26</date>
+            </author>
+            </summary>
+        </member>
+        <member name="F:BC.BaseSecurity.DESEncrypt.word">
+            <summary>
+            加密字符
+            </summary>
+        </member>
+        <member name="M:BC.BaseSecurity.DESEncrypt.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BC.BaseSecurity.DESEncrypt.Encrypt(System.String,System.String)">
+            <summary> 
+            加密数据 
+            </summary> 
+            <param name="Text"></param> 
+            <param name="sKey"></param> 
+            <returns></returns> 
+        </member>
+        <member name="M:BC.BaseSecurity.DESEncrypt.Decrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BC.BaseSecurity.DESEncrypt.Decrypt(System.String,System.String)">
+            <summary> 
+            解密数据 
+            </summary> 
+            <param name="Text"></param> 
+            <param name="sKey"></param> 
+            <returns></returns> 
+        </member>
+        <member name="T:BC.BaseSecurity.Md5Helper">
+            <summary>
+            MD5加密帮助类
+            version: 2.0
+            <author>
+            	<name>liyu</name>
+            	<date>2015.08.26</date>
+            </author>
+            </summary>
+        </member>
+        <member name="M:BC.BaseSecurity.Md5Helper.MD5(System.String,System.Int32)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="text">加密字符</param>
+            <param name="code">加密位数16/32</param>
+            <returns></returns>
+        </member>
+        <member name="T:BC.BaseSecurity.PwdHelper">
+            <summary>
+            密码加密帮助类
+            version: 2.0
+            <author>
+            	<name>liyu</name>
+            	<date>2015.08.26</date>
+            </author>
+            </summary>
+        </member>
+        <member name="M:BC.BaseSecurity.PwdHelper.GetPassword(System.String)">
+            <summary>
+            获取加密密码
+            </summary>
+            <param name="text">加密字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:BC.BaseSecurity.PwdHelper.E(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BC.BaseSecurity.LibrarySecurity">
+            <summary>
+            类库的安全类
+            </summary>
+        </member>
+        <member name="M:BC.BaseSecurity.LibrarySecurity.IsOver">
+            <summary>
+            是否结束(lic是否通过)
+            </summary>
+            <returns>空字符串：通过；反之；无法通过；</returns>
+        </member>
+        <member name="T:BC.BaseSecurity.ResultMessageBase">
+            <summary>
+            返回结果基类（AllMessage,DebuggerSql,ErrorMessage,Status,JsonStr）
+            </summary>
+        </member>
+        <member name="M:BC.BaseSecurity.ResultMessageBase.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:BC.BaseSecurity.ResultMessageBase.LicenseMessage">
+            <summary>
+            license信息（如果有值，则license无法通过；反之，通过；）
+            </summary>
+        </member>
+        <member name="P:BC.BaseSecurity.ResultMessageBase.AllMessage">
+            <summary>
+            ErrorMessage+"---\r\n"+Dubugger语句（默认值:string.Empty）
+            </summary>
+        </member>
+        <member name="P:BC.BaseSecurity.ResultMessageBase.DebuggerSql">
+            <summary>
+            Dubugger语句（默认值: "---\r\n"）
+            </summary>
+        </member>
+        <member name="P:BC.BaseSecurity.ResultMessageBase.ErrorMessage">
+            <summary>
+            *错误信息（默认值:string.Empty）
+            </summary>
+        </member>
+        <member name="P:BC.BaseSecurity.ResultMessageBase.Status">
+            <summary>
+            操作状态（0:success; 1:fail;）默认值:0
+            </summary>
+        </member>
+    </members>
+</doc>
